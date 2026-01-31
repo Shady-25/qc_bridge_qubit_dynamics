@@ -1,17 +1,33 @@
-# Quantun States
+# Quantum States
 
-A quantum systeme is described and manipulated via Schrödinger equation.
+A quantum system is described by a **quantum state**, whose time evolution (for closed systems) is governed by the Schrödinger equation.
 
-We call *eigenfunction* of the Schrödinger equation a linear operator that is a solution of Schrödinger equation.
+The Schrödinger equation involves a linear operator called the **Hamiltonian**.  
+The eigenfunctions of the Hamiltonian are the **eigenstates** of the system, associated with definite energy values.
 
-The state of a quantum system is given by a linear combination of all the eigenfunctions of the Schrödinger equation governing that system.
+The state of a quantum system can be expressed as a **linear combination of eigenstates** of a chosen operator (for example, the Hamiltonian), provided that these eigenstates form a complete basis.
 
+**RK:** The main difference between classical and quantum systems is **indeterminacy**.  
+In quantum mechanics, even if the quantum state is perfectly known, the outcomes of measurements are generally probabilistic. A quantum system is therefore described by a **superposition of possible states**, and a measurement projects the state onto one of the possible outcomes (eigenstates of the measured observable).
 
-**RK:** The main difference between classical and quantum systeme is the **indeterminicy** which mean that in a quantum systeme -unlike the classic one- we do not Know the exact state of our particle, instead the system is described by a **superposition** of possible states, until a measurement projects it onto one outcome (one eigenfunction).
+Quantum states can be **pure** or **mixed**, and admit several representations.  
+Pure quantum states are commonly represented as vectors in a **Hilbert space**.  
+Mixed states are statistical mixtures of pure states and cannot be represented by a single vector; they are instead described using **density matrices**.
 
-Quantum states are either pure or mixed, and have several possible representations. Pure quantum states are commonly represented as a vector in a "*Hilbert space*". Mixed states are statistical mixtures of pure states and cannot be represented as vectors on that Hilbert space, and instead are commonly represented as "*density matrices*".
+**Hilbert space:** A Hilbert space is a vector space equipped with a scalar product, which allows one to define norms and angles between vectors. It is a *complete* space, meaning that all convergent sequences of vectors have a limit inside the space.
 
-* **Hilbert space:** is a mathematical space when for every couple of vectors is associated a real number using it's scalar product, and it's a complete space (no gape space, for more details better loking in "Cauchy series","pre-helbertien space").
+Vectors are written using bra–ket notation:
 
-* **Density matrices:** is a mathematical representation of quantum systeme, combining classical probabilities with quantum states vectors.
+- $\ket{\psi}$ : ket (column vector)  
+- $\bra{\psi}$ : bra (row vector)
+
+The scalar product between two states $\ket{\psi}$ and $\ket{\phi}$ is written as:
+
+$\braket{\psi|\phi}$
+
+This scalar product allows one to define:
+- the **norm** of a state
+- **probability amplitudes** associated with measurements
+
+**Density matrix:** A density matrix is a mathematical representation of a quantum system that combines classical probabilities with quantum state vectors.
 
