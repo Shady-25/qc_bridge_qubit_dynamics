@@ -31,3 +31,14 @@ This scalar product allows one to define:
 
 **Density matrix:** A density matrix is a mathematical representation of a quantum system that combines classical probabilities with quantum state vectors.
 
+A quantum state is an abstract object, independent of any particular representation.  
+In practice, a representation is obtained by choosing a basis, usually defined by the eigenstates of a given observable.
+
+So, the same quantum states ( physics information) might be represented by different wave functions depending on the basis
+
+For example, in standard quantum mechanics, the position representation leads to the wave function $ \psi(x) = \langle x | \psi \rangle $.  
+In other contexts, such as finite-dimensional systems ( which is the case in quantum computing), the quantum state is represented by a finite set of complex coefficients in a chosen basis: $ \ket \psi = \sum_n C_n\ket n $, The $C_n$ coefficients are the representations of state in this particular basis.
+
+At this stage, the quantum state is defined up to an overall normalization factor.  
+The physical interpretation of the scalar product, together with the normalization condition and the measurement postulate, will be introduced in the next section.
+
