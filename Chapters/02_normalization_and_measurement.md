@@ -21,8 +21,8 @@ In other words, the physical content of quantum mechanics is not contained in th
 ## Born rule:
 
 * In position space: $$P(x \in [a,b])= \int_{a}^{b} | \psi(x,t)|^2 dx$$
-* In Hilbert space: $$P(\phi)=| \langle \phi | \psi \rangle |^2$$
-* Probability must verifie: $\sum{P}=1$ or $\int P=1$.
+* In Hilbert space (If $\ket\phi$ corresponds to a possible measurement outcome) : $$P(\phi)=| \langle \phi | \psi \rangle |^2$$
+* Probabilities must satisfy a normalization condition: $\sum{P}=1$ or $\int P=1$.
 
 $\quad\quad\quad\quad$ for quantum state: $\langle \psi|\psi \rangle=1$.
 
@@ -31,7 +31,7 @@ $\quad\quad\quad\quad$ for quantum state: $\langle \psi|\psi \rangle=1$.
 * A quantum state is a vector in Hilbert space: $\ket{\psi} \in H$.
 * Probability of getting a pure state $\ket{a_n}$ of an **Observable** A is: $P(a_n)=|\langle a_n| \psi \rangle|^2$.
 
-$\quad\quad\quad\quad$ **Observable** is a measurable physics property.
+$\quad\quad\quad\quad$ An **observable** is represented by a Hermitian operator.
 
 * Sum of all possible results gives: $\sum_n{|\langle a_n| \psi \rangle|^2}=\langle \psi|\psi \rangle=1$.
 
@@ -45,5 +45,7 @@ when we do a measurement:
 
 * post-measurement state will be : $\ket{\psi}\longmapsto \frac{P_n \ket{\psi}}{\sqrt{\braket{\psi|P_n|\psi}}}$.
 
-**Rk: normalization is automatically re-applied after each projection.**
+Where $P_n = |a_n\rangle\langle a_n|$ is the projector onto the eigenstate $|a_n\rangle$.
 
+
+**RK: The post-measurement state is normalized by construction.**
