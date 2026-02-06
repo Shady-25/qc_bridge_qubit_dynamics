@@ -66,8 +66,7 @@ In another measurement basis, they yield different outcomes due to **interferenc
 
 **Relative phases affect measurable quantities.**
 
-But why these coefficient are complexe numbers?
-
+But why are these coefficients complex numbers?
 Because:
 - phases must vary **continuously**
 - interference effects depend on smooth phase changes
@@ -80,3 +79,55 @@ Complex numbers are the **minimal mathematical structure** that allows:
 
 This is not a convention, but a **physical necessity**.
 
+From the above, we conclude:
+- A quantum state is a **normalized vector** in a complex vector space
+- States differing by a global phase are physically identical
+
+This leads naturally to the concept of **projective Hilbert space**.
+
+Suppose the state undergoes some transformation:
+$\ket{\psi} \rightarrow \ket{\psi'}$
+
+This transformation must:
+- preserve normalization
+- preserve probabilities
+- preserve relative phases
+
+The only linear transformations with these properties are **unitary operators**:
+
+$\ket{\psi'} = U \ket{\psi} \quad, \quad U^\dagger U = I$
+
+Thus, **unitarity is not postulated arbitrarily** — it is imposed by the structure of quantum states and measurements.
+
+Any continuous unitary transformation can be written as:
+$U(t) = e^{-iHt/\hbar}$
+
+where:
+- $H$ is a Hermitian operator
+- $H$ generates changes in relative phases
+
+This operator is called the **Hamiltonian**.
+
+**Key idea:**  
+
+The Hamiltonian emerges as the generator of physically meaningful phase evolution, not merely as an energy operator.
+
+---
+
+## Conceptual Summary
+
+- Quantum states require more than probabilities → phases are essential
+- Global phase is unobservable
+- Relative phases encode physical information
+- Complex numbers are unavoidable
+- Valid state transformations must be unitary
+- The Hamiltonian generates unitary evolution by controlling phase relations
+
+---
+
+This framework prepares the ground for understanding **time-independent Schrödinger equations, stationary states, and quantum dynamics**, which will be introduced in the next section.
+
+
+---
+ For a two-level system, this structure is exactly what defines a qubit, whose physical information is entirely encoded in probability amplitudes and relative phases.
+ ---
