@@ -1,44 +1,90 @@
-# Hamiltonian and time evolution in quatum system
+# Hamiltonian and time evolution in quantum system
 
-Classically, a system evolves because forces act upon it. Positions and velocity changes under the effect of these forces.
+*(Evolution in quantum systems)*
 
-However, In quantum mechanics,none of these exist, the system evolves because the phases of its energy components rotate.
+Classically, a system evolves because forces act upon it, positions and velocity changes under the effect of these forces. **But in quantum mechanics, what exactly evolves?**
 
-this rotation isn't a rotation in real space but in a complex plan: each compenent of energy " $E_n$ " hold a temporel phase: $$e^{-i E_n t/\hbar}$$
+A quantum state is a vector in Hilbert space
+The fundamental object that describes a quantum system is the state vector $\ket{\psi(t)} \in H$. This vector contains all the information about the system.
 
-Different components rotate with diferent speed, so the relative phases change, and that change the interfernces what changes the observable probability.
+So when we talk about “time evolution” in quantum mechanics, we mean:
 
-That what we call " Quantum Dynamic".
+**Time evolution = the state vector changes with time.**
 
-As priouvesly said, in quantum we don't talk about positions and velocity changes like in claccis systems so what is actually a time evolution in quantum mechanics ? time evolution of $\psi(t)$ means:
-- the phases of energy component change
-- interference between these phases change
-- probability of measurement change
+However, normalization must be preserved all along system evolution, so the total probability remain equal to 1 at all times. 
+$$\braket{\psi(t)|\psi(t)}=1 \quad\quad \forall t$$
+If the evolution takes an initial state $\ket{\psi(0)}$ to a later state $\ket{\psi(t)}$ then for any two states $\ket\phi$ & $\ket\psi$:
+$$\braket{\phi(0)|\psi(0)}= \braket{\phi(t)|\psi(t)}$$
+Measurement probabilities depend on inner products, means that inner product is preserved.
 
-Examples:
-- An electron changes its probability distribution around the nucleus, because its state is a superposition of several energy states.
+The only transformations on a Hilbert space that preserve all inner products are unitary operators.
 
-- A spin precesses in a magnetic field, because the two energy levels of the spin acquire different phases.
+Thus, the most general form of time evolution is:
+$$\ket{\psi(t)}=U(t)\ket{\psi(0)} \quad,\quad U(t)^\dagger U(t)=I$$
+*This is the most fundemental and general statement about time evolution in quantum mechanics.*
 
-- A wave packet moves, because it is a continuous superposition of energy and momentum states.
+Physics does not allow the state to “jump” discontinuously when time changes by an infinitesimal amount. So we require:
 
-What an Hamiltonian has to do with all that?
+$$\lim\limits_{\Delta t \rightarrow 0} U(\Delta t)=I$$
 
-The entire time evolution is completely determined by the Hamiltonian 𝐻.
+ *"Small changes in time produce small changes in the state."*
 
-The Schrödinger equation states:
-$$i\hbar \frac{d}{dt} \ket{\psi(t)}= H \ket{\psi(t)}$$
-general solution:
-$$\ket{\psi(t)}=e^{-iHt/\hbar} \ket{\psi(0)}$$
+Time evolution must satisfy:
 
-This exponential factor is a unitary operator that:
+$U(t_1)U(t_2)=U(t_1+t_2)$
+because evolving for $t_1$ and then for $t_2$ is the same as evolving for $t_1 +t_2$. This is called a **one‑parameter unitary group.**
 
-- generates the time phases,
+For finite-dimensional systems (which includes qubits), any continuous unitary one-parameter group has a Hermitian generator: "Any strongly continuous one‑parameter unitary group can be written as: $U(t)=e^{-iGt}$"
 
-- determines the rotation speeds of the energy components, sets the dynamics of the system.
+where $G$ is a unique self‑adjoint operator.
 
-That is why it is said that:
+$$U^\dagger U=I$$
 
-- The Hamiltonian is the generator of time evolution.
-- The Hamiltonian is the generator of phases.
+Differentiate this condition at $t=0$:
+
+$$G^\dagger =G$$
+
+That shows:
+
+Hermiticity is required by probability conservation
+
+With other words this theorem tells us that **unitarity + continuity + group structure** force the time evolution operator to be an exponential of some **Hermitian** operator.
+
+Let’s call that operator $\frac{H}{\hbar} \rightarrow  \boxed{U(t)=e^{-iHt/\hbar}}$.
+
+---
+
+**The operator $H$ as generator of time evolution:**
+
+By definition: ${U(t)=e^{-iHt/\hbar}}$
+
+Differentiate at t=0:
+
+$$\frac{d}{dt} U(t) |_{t=0} = \frac{-i}{\hbar} H$$
+
+So:
+
+$$H= i\hbar \frac{d}{dt} U(t) |_{t=0}$$
+
+This shows:
+
+### The Hamiltonian is the generator of infinitesimal time evolution.
+*The Hamiltonian is not introduced as “energy” here.
+It is first introduced as the generator required by unitarity and continuity.*
+
+Deriving the Schrödinger equation
+
+Start from:
+
+$$\ket{\psi(t)}= U(t) \ket{\psi(0)}=e^{-iHt/\hbar} \ket{\psi(0)}$$
+
+Differentiate with respect to time:
+
+$$\frac{d}{dt} \ket{\psi(t)}=-\frac{i}{\hbar} H \ket{\psi(t)}$$
+
+Multiply both sides by $i\hbar$:
+
+$$\boxed{i\hbar \frac{d}{dt} \ket{\psi(t)}=H \ket{\psi(t)}}$$
+
+This is the **time‑dependent Schrödinger equation.**
 
