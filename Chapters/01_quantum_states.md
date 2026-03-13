@@ -1,3 +1,9 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
+
 # Quantum States
 
 A quantum system is described by a **quantum state**, whose time evolution (for closed systems) is governed by the Schrödinger equation.
