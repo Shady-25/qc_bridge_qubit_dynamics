@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Normalization & Measurement
 
 To understand why we introduce the concept of **normalization** of a wave function, we first recall the **Born statistical interpretation**.
