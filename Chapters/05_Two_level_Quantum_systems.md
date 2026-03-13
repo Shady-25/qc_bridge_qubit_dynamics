@@ -19,7 +19,7 @@ $$\ket0 \quad \quad, \quad \quad \ket 1$$
 These basis states may represent:
 
 * two energy levels of an atom (ground/excited)
-*  spin-up & spin-down of a spin $\frac{-1}{2}$ particle
+*  spin-up & spin-down of a spin $\frac{1}{2}$ particle
 * two stable states of a superconducting qubit
 * any physical system with exactly two  distinguishable states
 
@@ -80,7 +80,7 @@ Thus, even without transitions between levels, a two‑level system already exhi
 
 The most general Hamiltonian acting on a two‑dimensional Hilbert space is a 2×2 **Hermitian matrix:**
 
-$$H=\begin{pmatrix} a & b \\ c^* & b \end{pmatrix};\quad\quad a,b \in R, c \in C.$$
+$$H=\begin{pmatrix} a & c \\ c^* & b \end{pmatrix};\quad\quad a,b \in R, c \in C.$$
 
 * The diagonal terms $a$ and $b$ correspond to the energies of $\ket0$ and $\ket1$
 * The *off-diagonal* term $c$ represents a **coupling** between the two states
