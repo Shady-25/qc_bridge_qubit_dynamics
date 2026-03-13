@@ -97,3 +97,39 @@ Consider a Hamiltonian with real coupling:
 
 $$H=\begin{pmatrix} E_0 & V \\ V & E_1 \end{pmatrix}; \quad V\in R$$
 
+This Hamiltonian is no longer diagonal in the $\ket 0$, $\ket 1$ basis.
+
+The true  energy eigenstates are linear combinations of $\ket 0$ and $\ket 1$.
+
+Diagonalizing $H$ gives two eigenvalues:
+
+$$E_{\pm} =\frac{E_0 +E_1}{2} \pm \sqrt{\left(\frac{E_1 -E_0}{2}\right)^2 + V^2}$$
+
+The corresponding eigenstates are superpositions of $\ket 0$ and $\ket 1$.
+
+If the system starts in $\ket 0$, the time evolution leads to **oscillations** between $\ket 0$ and $\ket 1$.
+
+this phenomenon is the simplest form of coherent population transfer.
+
+The oscillation frequency is determined by the energy splitting:
+
+$$\Omega = \frac{E_+ -E_-}{\hbar}$$
+
+This is the origin of **Rabi oscillations**, which will be studied in more detail later.
+
+## Why Two-Level Systems Matter
+
+Two‑level systems are fundamental because:
+
+* they are mathematically simple
+
+* they capture all essential quantum behavior
+
+* they form the basis of quantum information theory
+
+* any qubit is a two‑level system
+
+* any finite‑dimensional system can be decomposed into two‑level subsystems
+
+In quantum computing, the states $\ket 0$ and $\ket 1$ become the logical states of a **qubit**.
+
