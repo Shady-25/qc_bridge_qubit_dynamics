@@ -80,7 +80,7 @@ Thus, even without transitions between levels, a two‑level system already exhi
 
 The most general Hamiltonian acting on a two‑dimensional Hilbert space is a 2×2 **Hermitian matrix:**
 
-$$H=\begin{pmatrix} a & b\\ c^* & b \end{pmatrix};\quad\quad a,b \in R, c \in C.$$
+$$H=\begin{pmatrix} a & b \\ c^* & b \end{pmatrix};\quad\quad a,b \in R, c \in C.$$
 
 * The diagonal terms $a$ and $b$ correspond to the energies of $\ket0$ and $\ket1$
 * The *off-diagonal* term $c$ represents a **coupling** between the two states
@@ -95,5 +95,5 @@ This is the simplest example of quantum transitions.
 
 Consider a Hamiltonian with real coupling:
 
-$$H=\begin{pmatrix} E_0 & V\\ V & E_1 \end{pmatrix}; \quad V\in R$$
+$$H=\begin{pmatrix} E_0 & V \\ V & E_1 \end{pmatrix}; \quad V\in R$$
 
