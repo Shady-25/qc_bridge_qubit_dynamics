@@ -48,7 +48,14 @@ $$H\ket0 =E_0 \ket0, \quad\quad H\ket1 =E_1\ket1$$
 
 In  this basis, the Hamiltonian is diagonal:
 
-$$H=\begin{pmatrix} E_0 & 0 \\ 0 & E_1 \end{pmatrix}$$
+$$
+\left(
+\begin{array}{cc}
+E_0 & 0 \\
+0 & E_1
+\end{array}
+\right)
+$$
 
 If the system is prepared in an energy eigenstate, its time evolution is simple:
 
