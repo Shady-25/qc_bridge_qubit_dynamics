@@ -63,10 +63,13 @@ They represent the three fundemental directions in the state space of a qubit.
 
 Each Pauli matrix corresponds to a measurement in a specific orthonormal basis:
 * $\sigma_z$:computational basis 
+
 $$\ket 0, \quad \ket 1.$$
 * $\sigma_y$: symmetric/anti-symmetric superpositions 
+
 $$\ket += \frac{\ket 0 + \ket 1}{\sqrt{2}}.$$
 * $\sigma_y$: superpositions with a relative phase 
+
 $$\ket \pm= \frac{\ket 0 \pm i \ket 1}{\sqrt{2}}.$$
 
 These three axes will become the $x$, $y$ and $z$ directions of the Bloch sphere.
@@ -85,10 +88,11 @@ This structure is identical tp the algebra of angular momentum in quantum mechan
 
 ### Anti-commutator
 
-$${A,B}= AB + BA$$
+$$\lbrace A,B \rbrace= AB + BA$$
 
 Pauli matrices satisfy:
-$${\sigma_i , \sigma_j}= 2 \delta_{ij} I.$$
+
+$$\lbrace \sigma_i , \sigma_j \rbrace= 2 \delta_{ij} I.$$
 
 Consequences:
 * If i $\neq j$, the matrices anti-commute $\to$ algebric orthogonality.
@@ -111,3 +115,31 @@ This shows that Pauli matrices realize the angular momentum algebra in the small
 
 A concrete example:
 Rotating a spin‑½ state around the x‑axis and then the y‑axis gives a different result than rotating around y first and then x. This non‑commutativity is encoded directly in the Pauli commutators.
+
+## Eigenvalues and eigenstates
+
+Each Pauli matrix has eigenvalues:
+
+$$ \lambda= +1,-1.$$
+
+The corresponding eigenstates define the fundamental measurement directions:
+
+* $\sigma_z: \ket 0 , \ket 1$
+* $\sigma_x: \ket + , \ket -$
+* $\sigma_y: \ket {+i} , \ket {-i}$
+
+These will become the poles and equatorial axes of the Bloch sphere.
+
+## Role of Pauli matrices in qubit dynamics
+
+Any qubit Hamiltonian can be written as:
+
+$$H= a_0 I + \vec{a}. \vec{\sigma}.$$
+
+The term $a_0 I$ contributes only a global phase. The vector $\vec{a}$ determines the actual dynamics. The time evolution operator is:
+
+$$U(t)= e^{-iHt/\hbar}=e^{-i(\vec{a}.\vec{\sigma})t/\hbar}.$$
+
+This exponential describes a rotation of the qubit state around the axis $\vec{a}$ on the Bloch sphere.
+
+This geometric interpretation will be developed in the next chapters.
