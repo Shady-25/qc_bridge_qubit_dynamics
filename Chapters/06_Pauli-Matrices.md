@@ -70,3 +70,44 @@ $$\ket += \frac{\ket 0 + \ket 1}{\sqrt{2}}.$$
 $$\ket \pm= \frac{\ket 0 \pm i \ket 1}{\sqrt{2}}.$$
 
 These three axes will become the $x$, $y$ and $z$ directions of the Bloch sphere.
+
+## Commutation and anti‑commutation: a brief conceptual window
+
+### Commutator
+
+$$[A,B]=AB - BA$$
+
+The commutator measures whether two operations influence each other.
+If $[A,B] \neq 0$, **the order of operations matters**. For Pauli matrices: 
+$$[\sigma_i , \sigma_j]= 2i \epsilon_{ijk} \sigma_k .$$
+
+This structure is identical tp the algebra of angular momentum in quantum mechanics.
+
+### Anti-commutator
+
+$${A,B}= AB + BA$$
+
+Pauli matrices satisfy:
+$${\sigma_i , \sigma_j}= 2 \delta_{ij} I.$$
+
+Consequences:
+* If i $\neq j$, the matrices anti-commute $\to$ algebric orthogonality.
+
+* If $i=j$, we obtain $\sigma_i ^2=I$.
+This orthogonality ensures that Pauli matrices from a complete basis for Hermitian operators on $\mathbb{C}^2$.
+
+## Connection to quantum angular momentum
+
+The angular momentum operators satisfy:
+$$[L_x,L_y]=i\hbar L_z$$
+
+and cyclic permutations. For a spin ‑½ particle:
+$$S_x=\frac{\hbar}{2} \sigma_x, \quad S_y=\frac{\hbar}{2} \sigma_y, \quad S_z=\frac{\hbar}{2} \sigma_z.$$
+
+Using the Pauli commutation relation: $[\sigma_x, \sigma_y]= 2i \sigma_z$, we obtain:
+$$[S_x,S_y]=i \hbar S_z.$$
+
+This shows that Pauli matrices realize the angular momentum algebra in the smallest possible representation. This is why they describe spin ‑½ systems and why qubit dynamics resemble rotations in three‑dimensional space.
+
+A concrete example:
+Rotating a spin‑½ state around the x‑axis and then the y‑axis gives a different result than rotating around y first and then x. This non‑commutativity is encoded directly in the Pauli commutators.
