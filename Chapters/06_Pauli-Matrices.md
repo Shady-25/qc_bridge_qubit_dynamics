@@ -2,7 +2,7 @@
 
 *Fundamental operators for two‑level quantum systems*
 
-Two‑level quantum systems require operators acting on a two‑dimensional Hilbert space. The most general Hermitian operator on $C^2$ contains four real parameters.
+Two‑level quantum systems require operators acting on a two‑dimensional Hilbert space. The most general Hermitian operator on $\mathbb{C^2}$ contains four real parameters.
 
 The identity matrix and the three Pauli matrices form a complete, orthogonal basis for this space. Because of this, Pauli matrices appear naturally in the description of qubits, spin‑½ particles, and any two‑state quantum system.
 
@@ -24,7 +24,7 @@ This operator contains four real degrees of freedom. The following four matrices
 
 $$ I, \quad \sigma_x, \quad \sigma_y, \quad \sigma_z.$$
 
-This decomposition will become essential when describing *qubit Hamiltonians**, **Bloch sphere geometry**, and **single‑qubit gates**.
+This decomposition will become essential when describing **qubit Hamiltonians**, **Bloch sphere geometry**, and **single‑qubit gates**.
 
 ## Definition of the Pauli matrices
 
@@ -65,7 +65,7 @@ Each Pauli matrix corresponds to a measurement in a specific orthonormal basis:
 * $\sigma_z$:computational basis 
 
 $$\ket 0, \quad \ket 1.$$
-* $\sigma_y$: symmetric/anti-symmetric superpositions 
+* $\sigma_x$: symmetric/anti-symmetric superpositions 
 
 $$\ket += \frac{\ket 0 + \ket 1}{\sqrt{2}}.$$
 * $\sigma_y$: superpositions with a relative phase 
@@ -85,7 +85,7 @@ If $[A,B] \neq 0$, **the order of operations matters**. For Pauli matrices:
 
 $$[\sigma_i , \sigma_j]= 2i \epsilon_{ijk} \sigma_k .$$
 
-This structure is identical tp the algebra of angular momentum in quantum mechanics.
+This structure is identical to the algebra of angular momentum in quantum mechanics.
 
 ### Anti-commutator
 
@@ -96,10 +96,10 @@ Pauli matrices satisfy:
 $$\lbrace \sigma_i , \sigma_j \rbrace= 2 \delta_{ij} I.$$
 
 Consequences:
-* If i $\neq j$, the matrices anti-commute $\to$ algebric orthogonality.
+* If i $\neq j$, the matrices anti-commute $\to$ algebraic orthogonality.
 
 * If $i=j$, we obtain $\sigma_i ^2=I$.
-This orthogonality ensures that Pauli matrices from a complete basis for Hermitian operators on $\mathbb{C}^2$.
+This orthogonality ensures that Pauli matrices form a complete basis for Hermitian operators on $\mathbb{C}^2$.
 
 ## Connection to quantum angular momentum
 
