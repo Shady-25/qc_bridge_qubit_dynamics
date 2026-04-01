@@ -55,7 +55,7 @@ These matrices are:
 * Unitary
 * Traceless
 * Determinant=-1
-* Involutive:$\sigma_{i}^2$= $I$
+* Involutive:${\sigma_i}^2$= $I$
 
 They represent the three fundemental directions in the state space of a qubit.
 
