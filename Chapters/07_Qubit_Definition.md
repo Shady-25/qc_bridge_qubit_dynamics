@@ -88,7 +88,7 @@ Given:
 
 $$\ket \psi= \alpha \ket0 +\beta \ket1$$
 
-A measurement in the $\lbrace\ket0$,$\ket1\rbrace$,basis :
+A measurement in the $\lbrace \ket0,\ket1 \rbrace$,basis :
 
 * outcome 0 with probability $|\alpha|^2$
 * outcome 1 with probability $|\beta|^2$
@@ -125,7 +125,7 @@ It means we choose a different question to ask the same system.
 
 * Measurement in the $\sigma_z$ basis asks:
 
-*“Is the qubit in $\ket0$ or $\ket1$?"*
+*“Is the qubit in* $\ket0$ *or* $\ket1$?"
 
 * Measurement in the $\sigma_x$ basis asks:
 
