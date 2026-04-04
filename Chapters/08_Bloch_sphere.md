@@ -52,5 +52,103 @@ $$|\vec r| =1.$$
 
 Thus, every pure qubit state corresponds to a unique point on the Bloch sphere.
 
-![Bloch_sphere](image.png)
+![Bloch_sphere](image.png "Bloch Sphere" )
+
+## Pauli Matrices Define the Axes
+
+The three Pauli matrices introduced in Chapter 06 correspond to the three coordinate axes of the Bloch sphere:
+
+* $\sigma_z$ $\to$ $z$-axis
+* $\sigma_x$ $\to$ $x$-axis
+* $\sigma_y$ $\to$ $y$-axis
+
+Their eigenstates are the six cardinal points:
+
+**Z-axis**
+
+$$\ket0 \leftrightarrow (0,0,1) \quad,\quad \ket1 \leftrightarrow (0,0,-1).$$
+
+**X-axis**
+
+$$\ket+ =\frac{\ket0 + \ket1}{\sqrt2} \leftrightarrow (1,0,0) \quad, \quad \ket- =\frac{\ket0 - \ket1}{\sqrt2} \leftrightarrow (-1,0,0).$$
+
+**Y-axis**
+
+$$\ket{+i} =\frac{\ket0 + i\ket1}{\sqrt2} \leftrightarrow (0,1,0) \quad, \quad \ket{-i} =\frac{\ket0 - i\ket1}{\sqrt2} \leftrightarrow (0,-1,0).$$
+
+This is the geometric meaning of the Pauli matrices:
+they define the fundamental measurement directions of the qubit.
+
+## Measurement on the Bloch Sphere
+
+Measurement does not depend on the representation.
+It depends on the basis, which corresponds to choosing an axis on the sphere.
+
+### i. Measurement in the $\sigma_z$ basis
+
+This is the computational basis:
+
+* outcome 0 $\longrightarrow$ projection onto the noth pole
+
+* outcome 1 $\longrightarrow$ projection onto the south pole
+
+Probabilties:
+
+$$P(0)=\frac{1+\cos\theta}{2} \quad,\quad P(1)=\frac{1-\cos\theta}{2}.$$
+
+### ii. Measurement in the $\sigma_x$ basis
+
+This corresponds to projecting onto the x‑axis:
+
+$$P(+)=\frac{1+\sin\theta \cos\phi}{2} \quad,\quad P(-)=\frac{1-\sin\theta \cos\phi}{2}.$$
+
+### iii. Measurement in the $\sigma_y$ basis
+
+Projectio onto the y-axis
+
+$$P(+i)=\frac{1+\sin\theta \sin\phi}{2} \quad,\quad P(-i)=\frac{1-\sin\theta \sin\phi}{2}.$$
+
+## What Does "Measuring in a Different Basis" Mean
+
+This is a crucial conceptual point.
+
+* The system is the same.
+
+* The state is the same.
+
+* What changes is the question you ask.
+
+Measuring in different bases corresponds to:
+
+* rotating the measurement apparatus
+
+* choosing a different axis on the Bloch sphere
+
+* projecting the same Bloch vector onto a different direction
+
+This is exactly like measuring the spin of an electron along different axes.
+
+**The qubit does not change. Only the orientation of the measurement changes.**
+
+## Why the Bloch Sphere is powerful
+
+The Bloch sphere provides:
+
+* a geometric representation of qubit states
+
+* a visual interpretation of relative phase
+
+* a clear picture of measurement directions
+
+* a natural way to understand qubit rotations
+
+* a foundation for quantum gates and control
+
+In the next chapter, we will see that the general qubit Hamiltonian:
+
+$$H= a_0 I + \vec{a}.\vec{\sigma}$$
+
+generates a rotation of the Bloch vector around the axis $\vec{a}$.
+
+This geometric interpretation is the heart of qubit dynamics.
 
