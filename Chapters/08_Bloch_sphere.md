@@ -52,5 +52,5 @@ $$|\vec r| =1.$$
 
 Thus, every pure qubit state corresponds to a unique point on the Bloch sphere.
 
-! [Bloch_sphere](Images\Bloch_sphere.png)
+![Bloch_sphere](image.png)
 
