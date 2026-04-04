@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Bloch Sphere
 *Geometric representation of a qubit state*
 

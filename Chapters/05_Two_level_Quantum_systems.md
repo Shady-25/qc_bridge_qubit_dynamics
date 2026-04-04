@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Two‑Level Quantum Systems
 *(The simplest non‑trivial quantum system)*
 

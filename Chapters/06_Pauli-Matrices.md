@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Pauli Matrices
 
 *Fundamental operators for two‑level quantum systems*

@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Qubit Definition
 
 *Structure and physical meaning of a two‑level quantum system*

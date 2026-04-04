@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # Hamiltonian and time evolution in quantum system
 
 *(Evolution in quantum systems)*
