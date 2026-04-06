@@ -33,7 +33,7 @@ Two real parameters $\to$ a point on a sphere.
 
 This is the origin of the **Bloch sphere**
 
-***The Bloch sphere is the exact geometric space of pure qubit states.*** 
+***The Bloch sphere is a geometric representation of pure qubit states.*** 
 
 ## Canonical Parametrization $\to$ Coordinates on a sphere
 
@@ -93,11 +93,11 @@ It depends on the basis, which corresponds to choosing an axis on the sphere.
 
 This is the computational basis:
 
-* outcome 0 $\longrightarrow$ projection onto the noth pole
+* outcome 0 $\longrightarrow$ projection onto the north pole
 
 * outcome 1 $\longrightarrow$ projection onto the south pole
 
-Probabilties:
+Probabilities:
 
 $$P(0)=\frac{1+\cos\theta}{2} \quad,\quad P(1)=\frac{1-\cos\theta}{2}.$$
 
@@ -109,7 +109,7 @@ $$P(+)=\frac{1+\sin\theta \cos\phi}{2} \quad,\quad P(-)=\frac{1-\sin\theta \cos\
 
 ### iii. Measurement in the $\sigma_y$ basis
 
-Projectio onto the y-axis
+Projection onto the y-axis
 
 $$P(+i)=\frac{1+\sin\theta \sin\phi}{2} \quad,\quad P(-i)=\frac{1-\sin\theta \sin\phi}{2}.$$
 
