@@ -34,7 +34,7 @@ The time evolution operator is:
 
 $$U(t)= e^{-iH t /\hbar}$$
 
-The term $a_0 I$ only contributes a **global phase**:
+The term $a_0 I$ only contributes a **global phase**, and therefore does not affect any observable:
 
 $$e^{-i (a_0 I)t/\hbar}=e^{-i a_0 t/\hbar} I$$
 
@@ -80,7 +80,7 @@ The time evolution operator is:
 
 $$U(t)= e^{-iH't /\hbar}=e^{-i \Omega t \hat{n}.\sigma}$$
 
-The key algebraic fact is:.
+The key algebraic fact is:
 
 $$(\hat{n}.\vec{\sigma})^2=I.$$
 
@@ -108,7 +108,7 @@ Then:
 
 $$U(t)=e^{-i H t/\hbar}=e^{-i(w t/2)\sigma_z}=\cos(wt/2)I - i\sin(wt/2)\sigma_z$$
 
-We Know:
+We know:
 
 $$\sigma_z \ket 0 = + \ket 0 \quad,\quad \sigma_z \ket 1 = - \ket 1$$
 
