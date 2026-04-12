@@ -1,3 +1,8 @@
+---
+header-includes:
+  - \usepackage{braket}
+---
+
 # General Qubit Hamiltonian
 
 *From abstract matrices to rotations on the Bloch sphere*
