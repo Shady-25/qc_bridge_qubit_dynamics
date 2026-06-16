@@ -3,7 +3,7 @@
 
 ---
 
-## 🌟 Motivation
+## Motivation
 
 My goal is to join the **Master 2 Quantum Information**  
 To prepare myself seriously — and to demonstrate both motivation and technical maturity — I decided to build a structured project that reconstructs the foundations of quantum computing **from first principles**, both theoretically and numerically.
@@ -13,13 +13,13 @@ It reflects my desire not only to *learn*, but to *understand deeply*, *simulate
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 The project is divided into two complementary parts:
 
 ---
 
-# 🧠 **Part I — Theoretical Foundations (10 Chapters)**  
+# **Part I — Theoretical Foundations (10 Chapters)**  
 Before writing a single line of code, I spent significant time building a **complete theoretical base** for single‑qubit quantum mechanics and quantum information.
 
 These 10 chapters form a coherent mini‑course that I wrote for myself to ensure I truly understood the physics and mathematics behind qubits.
@@ -41,7 +41,7 @@ These chapters were essential for me: they allowed me to approach the coding par
 
 ---
 
-# 💻 **Part II — Numerical Simulation (Jupyter Notebooks)**
+# **Part II — Numerical Simulation (Jupyter Notebooks)**
 **Note: All notebooks share a centralized utils.py module for core matrix mathematics and visualization functions, ensuring clean and reusable code.*
 
 After building the theoretical base, I translated the concepts into **NumPy simulations** and **visualizations**.
@@ -89,7 +89,7 @@ This notebook will demonstrate my ability to transition from theory to practice 
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 Throughout this project, I strengthened my understanding of:
 
@@ -111,9 +111,9 @@ This project also helped me develop:
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
-- Complete the Qiskit notebook  
+- Complete the Qiskit repository  
 - Reproduce Bloch sphere visualizations using Qiskit  
 - Explore measurement and the Born rule  
 - Study multi‑qubit systems and entanglement  
@@ -121,7 +121,7 @@ This project also helped me develop:
 
 ---
 
-## 🙋‍♂️ About Me
+##  About Me
 
 I have a **Master 1 in Physics**, and I am deeply motivated to specialize in **quantum information and quantum technologies**.  
 
